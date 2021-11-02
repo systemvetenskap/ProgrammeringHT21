@@ -16,6 +16,10 @@
                 FontFamily="Arial Black" FontSize="18" 
                 Click="btnMessage_Click"/>
         <Button x:Name="btnMessage2" Content="Button" HorizontalAlignment="Left" Margin="400,217,0,0" VerticalAlignment="Top" Height="91" Width="180" Click="btnMessage2_Click"/>
+        <TextBox x:Name="txtFirstname" HorizontalAlignment="Left" Margin="72,186,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnOk" Content="Ok" HorizontalAlignment="Left" Margin="72,227,0,0" VerticalAlignment="Top" Height="35" Width="86" Click="btnOk_Click"/>
+        <TextBlock x:Name="txtResult" HorizontalAlignment="Left" Margin="72,289,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="53" Width="86"/>
+        <Label x:Name="lblResult"  HorizontalAlignment="Left" Margin="254,186,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

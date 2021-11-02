@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FL1", "FL1\FL1.csproj", "{567406BA-44F9-4895-AF47-56DF5B7AEA6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FL1", "FL1\FL1.csproj", "{567406BA-44F9-4895-AF47-56DF5B7AEA6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FL2", "FL2\FL2.csproj", "{9B8F00A9-5A50-485B-B561-6C84F15FB972}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FL2", "FL2\FL2.csproj", "{9B8F00A9-5A50-485B-B561-6C84F15FB972}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yahtzee", "Yahtzee\Yahtzee.csproj", "{2458FF2C-A82B-4B32-8B1D-7028CD86E189}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{9B8F00A9-5A50-485B-B561-6C84F15FB972}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B8F00A9-5A50-485B-B561-6C84F15FB972}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B8F00A9-5A50-485B-B561-6C84F15FB972}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2458FF2C-A82B-4B32-8B1D-7028CD86E189}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2458FF2C-A82B-4B32-8B1D-7028CD86E189}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2458FF2C-A82B-4B32-8B1D-7028CD86E189}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2458FF2C-A82B-4B32-8B1D-7028CD86E189}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
