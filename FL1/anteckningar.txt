@@ -1,0 +1,34 @@
+﻿Pusselbitar
+
+VARIABLER
+- en låda som kan bevara värdet från exempelvis en beräkning eller inmatning
+- kan användas flera gånger
+- de kan ändra värde
+- eller uppdatera / utöka värde
+- alla variabler måste ha en datatyp
+- men man kan konvertera (Byta) till en annan datatyp om man vill
+- värden kan manipuleras med operatorer,
+- aritmetiska: +-*/
+- öka värdet genom += eller minska -=
+- ++
+- --
+- variablers räckvidd
+- begränsar en variabel till dess context
+- context kan vara som en liten låda
+- vi kan öka en variabels räckvidd genom att lyfta ut den från ett kodblock 
+och lägga det i ett större
+
+
+
+STYRANDE SATSER
+- if-satser
+- måste ha ett villkor
+- som måste valideras som sant eller falskt
+- logiska operatorer och relationella operatorer
+- en if-sats kan ha en else kopplat till sig. Det betyder typ annars
+- men man kan också ha några andra villkor. Det kallas else if, annars om
+- ifsatser som är uppfyllda = true, bryter kedjan av andra if-satser
+- tips: rangordna dina if-statements. Störst -> minst eller vice versa
+- många gånger har man intervaller, eller olika kombinationer av villkor som ska testas.
+--> använd logiska operatorer (OCH ELLER, AND OR), i C#: && || 
+- if.satser kan nästlas. Dvs stoppa in en eller flera if-satser i en annan if-sats

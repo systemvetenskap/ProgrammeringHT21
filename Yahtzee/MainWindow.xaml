@@ -45,6 +45,8 @@
 
             <Label x:Name="captionTotal" FontSize="25" Content="Total" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FFFF4E96" FontWeight="Bold"  Grid.Row="7" Grid.Column="0"/>
             <TextBox x:Name="txtTotal" FontSize="25" TextAlignment="Center" HorizontalAlignment="Left" Height="50" TextWrapping="Wrap" VerticalAlignment="Top" Width="46"  Grid.Row="7" Grid.Column="1"/>
+            <Button x:Name="btnOnes" Content="Spara" Grid.Column="1" HorizontalAlignment="Left" Margin="73,10,0,0" VerticalAlignment="Top" Width="70" Click="btnOnes_Click"/>
+            <Button x:Name="btnTwos" Content="Spara" Grid.Column="1" HorizontalAlignment="Left" Margin="73,15,0,0" VerticalAlignment="Top" Width="70" Click="btnTwos_Click"  Grid.Row="1"/>
         </Grid>
         <Button x:Name="btnSave" Content="Spara" HorizontalAlignment="Left" Margin="254,475,0,0" VerticalAlignment="Top" Height="55" Width="130" Click="btnSave_Click"/>
     </Grid>
