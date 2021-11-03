@@ -108,7 +108,7 @@ namespace FL3
 
 
             
-            MessageBox.Show($"Grattis, du fick {bonus} extra poäng");
+            MessageBox.Show($"Grattis, du fick {bonus} extra poäng!");
 
             // if else
         }
