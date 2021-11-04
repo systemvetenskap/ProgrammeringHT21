@@ -18,7 +18,12 @@ VARIABLER
 - vi kan öka en variabels räckvidd genom att lyfta ut den från ett kodblock 
 och lägga det i ett större
 
-
+DATATYPER
+- heltal: integer
+- strängar: string
+- boolska Sant/falskt: bool
+- flyttal: double (decimal)
+- ett tecken: char
 
 STYRANDE SATSER
 - if-satser
@@ -27,8 +32,11 @@ STYRANDE SATSER
 - logiska operatorer och relationella operatorer
 - en if-sats kan ha en else kopplat till sig. Det betyder typ annars
 - men man kan också ha några andra villkor. Det kallas else if, annars om
-- ifsatser som är uppfyllda = true, bryter kedjan av andra if-satser
+- ifsatser som är uppfyllda = true, bryter kedjan av andra if-satser, alltså else-if
 - tips: rangordna dina if-statements. Störst -> minst eller vice versa
 - många gånger har man intervaller, eller olika kombinationer av villkor som ska testas.
 --> använd logiska operatorer (OCH ELLER, AND OR), i C#: && || 
-- if.satser kan nästlas. Dvs stoppa in en eller flera if-satser i en annan if-sats
+- if-satser kan nästlas. Dvs stoppa in en eller flera if-satser i en annan if-sats
+- ! ett utropstecken vänder på ett uttryck--> alltså inte är
+- == använder vi när vi jämför om två uttryck är exakt lika
+- C# är skiftlägeskänsligt, alltså vi gör skillnad på stora och små bokstäver
