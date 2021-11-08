@@ -11,7 +11,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Yahtzee", "Yahtzee\Yahtzee.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FL3", "FL3\FL3.csproj", "{9E1BA684-0929-49AD-99B6-1D9FA0F5DAFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FL4", "FL4\FL4.csproj", "{C7AFEA90-6D96-441C-8AC7-6BF7ACA08472}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FL4", "FL4\FL4.csproj", "{C7AFEA90-6D96-441C-8AC7-6BF7ACA08472}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{90C20311-8B8D-4C2F-9F45-E32618554427}"
+	ProjectSection(SolutionItems) = preProject
+		Edabit.txt = Edabit.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

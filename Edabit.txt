@@ -1,0 +1,8 @@
+Using the "&&" Operator
+https://edabit.com/challenge/huxpwewKXKxWWdcsr
+
+Find the Perimeter of a Rectangle
+https://edabit.com/challenge/5JzZhNdpRkDKsWwFW
+
+The Farm Problem
+https://edabit.com/challenge/4AaTbg5NuA8eSijcr
