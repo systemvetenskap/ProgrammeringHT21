@@ -40,3 +40,20 @@ STYRANDE SATSER
 - ! ett utropstecken vänder på ett uttryck--> alltså inte är
 - == använder vi när vi jämför om två uttryck är exakt lika
 - C# är skiftlägeskänsligt, alltså vi gör skillnad på stora och små bokstäver
+
+ARRAYER
+- Ett sätt att gruppera variabler
+- Att låta en variabel hålla flera värden
+- Arrayer brukar upplevas som svårt.
+- Du kan skapa arrayer av varje datatyp i C#
+- Skapas med []
+- Men du måste skapa ett nytt objekt
+- Skapas från en grundmall = mall --> Klass
+- Arrayen måste ha en storlek
+- kan bara hålla data av samma datatyp
+- kan dock skapas för vilken datatyp som helst
+
+LOOP
+- när man vill snurra igenom alla "saker" som finns i en kollektion eller array
+- det finns massa olika typer av loopar
+- for, foreach, while, do while

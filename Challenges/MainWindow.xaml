@@ -1,0 +1,25 @@
+﻿<Window x:Class="Challenges.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Challenges"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btnOkl" Content="Validera" HorizontalAlignment="Left" Margin="40,299,0,0" VerticalAlignment="Top" Height="84" Width="188" Click="btnOkl_Click"/>
+        <Button x:Name="btnPerimiter" Content="Omkrets" HorizontalAlignment="Left" Margin="248,52,0,0" VerticalAlignment="Top" Height="96" Width="152" Click="btnPerimiter_Click"/>
+        <StackPanel Margin="248,313,417,74">
+            <CheckBox x:Name="chkA" Content="A" Height="35" Width="132"/>
+            <CheckBox x:Name="chkB" Content="B" Height="35" Width="132"/>
+        </StackPanel>
+        <StackPanel>
+            <RadioButton x:Name="rdoChild" Content="Barn" GroupName="age" />
+            <RadioButton x:Name="rdoAdult" Content="Vuxen" GroupName="age"/>
+            <RadioButton x:Name="rdoYellow" Content="Gul" GroupName="color"/>
+            <RadioButton x:Name="rdoPink" Content="Rosa" GroupName="color"/>
+        </StackPanel>
+        <!--<Button x:Name="btnFarmer" Content="Bondens djur" Click="btnFarmer_Click" />-->
+        <Button x:Name="btnHurdleJump" Content="Häcklöpning" Click="btnHurdleJump_Click" />
+    </Grid>
+</Window>
