@@ -18,9 +18,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Edabit.txt = Edabit.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Challenges", "Challenges\Challenges.csproj", "{237688E0-E3AE-4CCA-A1B1-B52A24650955}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Challenges", "Challenges\Challenges.csproj", "{237688E0-E3AE-4CCA-A1B1-B52A24650955}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FL5", "FL5\FL5.csproj", "{4B846109-D502-49FF-995C-71CCF588AE75}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FL5", "FL5\FL5.csproj", "{4B846109-D502-49FF-995C-71CCF588AE75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metoder", "Metoder\Metoder.csproj", "{980170AE-98EF-49A5-8476-E6964F8C3EBB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -56,6 +58,10 @@ Global
 		{4B846109-D502-49FF-995C-71CCF588AE75}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B846109-D502-49FF-995C-71CCF588AE75}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4B846109-D502-49FF-995C-71CCF588AE75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{980170AE-98EF-49A5-8476-E6964F8C3EBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{980170AE-98EF-49A5-8476-E6964F8C3EBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{980170AE-98EF-49A5-8476-E6964F8C3EBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{980170AE-98EF-49A5-8476-E6964F8C3EBB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -25,9 +25,27 @@ namespace Yahtzee
         {
             InitializeComponent();
         }
+        /// <summary>
+        /// presenterar i gränssnittet
+        /// </summary>
+        /// <param name="dices"></param>
+        private void DisplayDices(int[] dices)
+        {
+            txtDie1.Text = dices[0].ToString();
+            txtDie2.Text = dices[1].ToString();
+        }
 
         private void btnSave_Click(object sender, RoutedEventArgs e)
         {
+            // skapar ett objekt av typen GameEngine
+            GameEngine game = new GameEngine();
+            int[] dices;
+            dices = game.RollDices();
+            DisplayDices(dices);
+            // Vi vill presentera våra tärningar i gränssnittet
+            // -->  varför inte skapa en metod?
+            /*
+
             // deklarerar variabler av datatypen integer = heltal
             int ones, twos, threes, fours, fives, sixes;
 
@@ -42,7 +60,7 @@ namespace Yahtzee
             // beräkna totalsumman
             total = ones + twos;
 
-            
+            */
             
         }
 
