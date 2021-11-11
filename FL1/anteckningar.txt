@@ -57,3 +57,25 @@ LOOP
 - när man vill snurra igenom alla "saker" som finns i en kollektion eller array
 - det finns massa olika typer av loopar
 - for, foreach, while, do while
+
+METODER
+- ett avgränsat uppdrag som utförs
+- metoder är något som GÖR något
+- saker kan beskrivas med egenskaper = hur de är
+- och med metoder: vad de kan göra
+- skulle eventuellt kunna kallas funktion
+- en metod = ett ansvarsområde
+- metoder har en tydlig struktur för hur de skapas
+- metodhuvud som beskriver vad metoden ska göra och in- och utdata
+- man kan ha flera metoder i en stor gruppmetod
+Metodhuvud:
+accessor = hur publik eller privat ska min metod vara I den här kursen är detta oviktigt. Kör public
+nästa sak = metodens utdata
+sedan metodens namn
+
+- en metod kan ha 0, eller flera, indataparametrar
+- indata kan vara av olika datatyper
+- metoder kan överlagras. Att samma metod kan finnas i flera olika varianter.
+- många gånger vill man lägga metoderna utanför gränssnittet
+- kallas ibland för helpers
+
