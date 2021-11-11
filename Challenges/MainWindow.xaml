@@ -20,6 +20,8 @@
             <RadioButton x:Name="rdoPink" Content="Rosa" GroupName="color"/>
         </StackPanel>
         <!--<Button x:Name="btnFarmer" Content="Bondens djur" Click="btnFarmer_Click" />-->
-        <Button x:Name="btnHurdleJump" Content="Häcklöpning" Click="btnHurdleJump_Click" />
+        <!--<Button x:Name="btnHurdleJump" Content="Häcklöpning" Click="btnHurdleJump_Click" />-->
+        <!--<Button x:Name="btnNameShuffle" Content="Blanda namn" Click="btnNameShuffle_Click" />-->
+        <Button x:Name="btnAvgWord" Content="Avg wordCount" Click="btnAvgWord_Click" />
     </Grid>
 </Window>

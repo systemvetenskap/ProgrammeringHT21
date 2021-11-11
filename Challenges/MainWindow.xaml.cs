@@ -139,5 +139,73 @@ namespace Challenges
             }
 
         }
+
+        private bool IsEven(int number) =>  number % 2 == 0;
+
+
+        private string NameShuffle(string fullName)
+        {
+            // en sträng är alltså en array of chars
+            int numberOfChars = fullName.Length;
+            // " dubbelfnutt = sträng
+            // ' enkelfnutt = tecken
+            string firstName = "", lastName="";
+            bool foundWhiteSpace = false;
+            // for (int i = numberOfChars-1; i >= 0; i--)
+            for (int i = 0; i < numberOfChars; i++)
+            {
+                if (IsEven(i))
+                {
+
+                }
+                char activeChar = fullName[i];
+                if (char.IsWhiteSpace(activeChar))
+                {
+                    foundWhiteSpace = true;
+                    continue;
+                }
+                if (!foundWhiteSpace)
+                {
+                    firstName += activeChar.ToString();
+                }
+                else
+                {
+                    lastName += activeChar.ToString();
+                }
+            }
+            return $"{lastName} {firstName}";
+           // string[] nameParts = fullName.Split(" ");
+            // return $"{nameParts[1]} {nameParts[0]}";
+        }
+
+        private double AverageWordLength(string sentence)
+        {
+            double mean = 0;
+            int words = 1, charCount=0;
+            // What a gorgeous day.
+            foreach (char c in sentence)
+            {
+                if (char.IsWhiteSpace(c))
+                {
+                    words++;
+                }
+                else if(char.IsLetterOrDigit(c))
+                {
+                    charCount++;
+                }
+            }
+            mean = charCount / (double)words;
+            return mean;
+        }
+
+        private void btnNameShuffle_Click(object sender, RoutedEventArgs e)
+        {
+            string name = NameShuffle("Pelle plutt");
+        }
+
+        private void btnAvgWord_Click(object sender, RoutedEventArgs e)
+        {
+            double average = AverageWordLength("What a gorgeous day.");
+        }
     }
 }

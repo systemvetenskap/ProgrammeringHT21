@@ -8,7 +8,7 @@ VARIABLER
 - alla variabler måste ha en datatyp
 - men man kan konvertera (Byta) till en annan datatyp om man vill
 - värden kan manipuleras med operatorer,
-- aritmetiska: +-*/
+- aritmetiska: +-*/ %
 - öka värdet genom += eller minska -=
 - ++
 - --
@@ -55,8 +55,12 @@ ARRAYER
 
 LOOP
 - när man vill snurra igenom alla "saker" som finns i en kollektion eller array
+- eller när man vill upprepa samma kodrad x antal gånger
 - det finns massa olika typer av loopar
 - for, foreach, while, do while
+- man kan "hoppa över" kod med continue
+- om du vill bryta loopen sätt en break
+- en for-loop kan även till exempel  köras baklänges
 
 METODER
 - ett avgränsat uppdrag som utförs
