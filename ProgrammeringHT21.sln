@@ -24,6 +24,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FL5", "FL5\FL5.csproj", "{4
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Metoder", "Metoder\Metoder.csproj", "{980170AE-98EF-49A5-8476-E6964F8C3EBB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FL7", "FL7\FL7.csproj", "{9FAF9473-E972-4A98-89E3-78522A6BB598}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -62,6 +64,10 @@ Global
 		{980170AE-98EF-49A5-8476-E6964F8C3EBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{980170AE-98EF-49A5-8476-E6964F8C3EBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{980170AE-98EF-49A5-8476-E6964F8C3EBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FAF9473-E972-4A98-89E3-78522A6BB598}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FAF9473-E972-4A98-89E3-78522A6BB598}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FAF9473-E972-4A98-89E3-78522A6BB598}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FAF9473-E972-4A98-89E3-78522A6BB598}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

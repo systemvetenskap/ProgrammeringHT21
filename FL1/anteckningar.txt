@@ -83,3 +83,17 @@ sedan metodens namn
 - många gånger vill man lägga metoderna utanför gränssnittet
 - kallas ibland för helpers
 
+OBJEKT
+- när vi kodar skapar vi klasser = mallar
+- från dessa skapar vi oändligt med objekt (instanser)
+- Ett objekt kan även ha beteenden = metoder
+- många objekt kan samlas i en collection = Lista
+- En lista är som en array, men den är dynamisk
+- ett objekt kan gömma egenskaper och metoder = inkapsling
+- fields = variabler inuti en klass
+
+STANDARD VID NAMNGÌVNING
+- variabler börjar med liten bokstav
+- metoder börjar med stor bokstav
+- klasser börjar med stor bokstav
+- fields börjar med _ (underscore)

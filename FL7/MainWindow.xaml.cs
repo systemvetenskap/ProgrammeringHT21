@@ -1,0 +1,146 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+
+namespace FL7
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        List<Person> people = new List<Person>();
+
+        public MainWindow()
+        {
+            InitializeComponent();
+        }
+
+        private void btnOk_Click(object sender, RoutedEventArgs e)
+        {
+            string name = txtName.Text;
+            int dayOfBirth = int.Parse(txtAge.Text);
+
+            Person person = new Person
+            {
+                Name = name,
+                BirthYear = dayOfBirth
+            };
+            people.Add(person);
+
+            UpdateListbox();
+            
+
+        }
+
+        private void UpdateListbox()
+        {
+            lstPeople.ItemsSource = null;
+            lstPeople.ItemsSource = people;
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+
+
+            Animal pig = new Animal
+            {
+                Type = "Gris",
+                NumberOfLegs = 4
+            };
+
+            Animal pig2 = new Animal
+            {
+                Type = "Gris",
+                NumberOfLegs = 4
+            };
+
+            Animal chicken = new Animal()
+            {
+                NumberOfLegs = 2,
+                Type = "Höna"
+            };
+
+            int totalLegs = pig.NumberOfLegs + chicken.NumberOfLegs;
+            // djurens antal ben i en lista
+            List<int> legCount = new List<int>();
+            legCount.Add(2);
+            legCount.Add(4);
+            legCount.Add(2);
+
+            // Nu vill vi samla bondens alla djur i en lista
+            List<Animal> animals = new List<Animal>();
+            animals.Add(pig);
+            animals.Add(pig2);
+            animals.Add(chicken);
+
+            totalLegs = CountTotalLegs(animals);
+
+            List<string> animalTypesInFarm = GetAnimalTypes(animals);
+
+            GetAnimalSounds(animals);
+        }
+
+
+        public int CountTotalLegs(List<Animal> animals)
+        {
+            // Eriks lilla minnesregel
+            // när du har en lista .... tänk loop
+            int total = 0;
+
+            foreach (Animal animal in animals)
+            {
+                total += animal.NumberOfLegs;
+            }
+
+            return total;
+        }
+
+        public List<string> GetAnimalTypes(List<Animal> animals)
+        {
+            List<string> types = new List<string>();
+            foreach (Animal animal in animals)
+            {
+                types.Add(animal.Type);
+            }
+
+            return types;
+        }
+        
+   
+
+
+
+
+
+
+        public void GetAnimalSounds(List<Animal> aninmals)
+        {
+            foreach (Animal animal in aninmals)
+            {
+                MessageBox.Show(animal.MakeSound());
+            }
+        }
+
+        private void btnGetPerson_Click(object sender, RoutedEventArgs e)
+        {
+            Person selectedPerson = lstPeople.SelectedItem as Person;
+            selectedPerson.Name = "Ändrat";
+
+            bool isVowel = selectedPerson.IsVowel('E');
+            UpdateListbox();
+            MessageBox.Show(selectedPerson.SayHello());
+        }
+    }
+}
