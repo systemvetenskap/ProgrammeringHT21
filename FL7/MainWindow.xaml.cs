@@ -21,10 +21,17 @@ namespace FL7
     public partial class MainWindow : Window
     {
         List<Person> people = new List<Person>();
+        Farm farm;
+
 
         public MainWindow()
         {
             InitializeComponent();
+            farm = new Farm(2)
+            {
+                Address = "Landsvägen 2",
+                Name = "Höjda"
+            };
         }
 
         private void btnOk_Click(object sender, RoutedEventArgs e)
@@ -52,27 +59,40 @@ namespace FL7
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
+            List<Animal> animals = new List<Animal>();
+            Animal animal;
+
+            // Solid
+            // Liskow subsitution principle
+            Animal animal2 = new Chicken("Agda");
 
 
-            Animal pig = new Animal
-            {
-                Type = "Gris",
-                NumberOfLegs = 4
-            };
+            animal = new Pig("Adgda");
 
-            Animal pig2 = new Animal
-            {
-                Type = "Gris",
-                NumberOfLegs = 4
-            };
 
-            Animal chicken = new Animal()
-            {
-                NumberOfLegs = 2,
-                Type = "Höna"
-            };
 
-            int totalLegs = pig.NumberOfLegs + chicken.NumberOfLegs;
+            bool success = farm.AddAnimal(animal);
+
+
+            //Animal pig = new Animal
+            //{
+            //    Type = "Gris",
+            //    NumberOfLegs = 4
+            //};
+
+            //Animal pig2 = new Animal
+            //{
+            //    Type = "Gris",
+            //    NumberOfLegs = 4
+            //};
+
+            //Animal chicken = new Animal()
+            //{
+            //    NumberOfLegs = 2,
+            //    Type = "Höna"
+            //};
+
+            // int totalLegs = pig.NumberOfLegs + chicken.NumberOfLegs;
             // djurens antal ben i en lista
             List<int> legCount = new List<int>();
             legCount.Add(2);
@@ -80,12 +100,7 @@ namespace FL7
             legCount.Add(2);
 
             // Nu vill vi samla bondens alla djur i en lista
-            List<Animal> animals = new List<Animal>();
-            animals.Add(pig);
-            animals.Add(pig2);
-            animals.Add(chicken);
-
-            totalLegs = CountTotalLegs(animals);
+            
 
             List<string> animalTypesInFarm = GetAnimalTypes(animals);
 
@@ -141,6 +156,33 @@ namespace FL7
             bool isVowel = selectedPerson.IsVowel('E');
             UpdateListbox();
             MessageBox.Show(selectedPerson.SayHello());
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            Animal animal;
+            bool success;
+            
+            animal = new Cow();
+            success = farm.AddAnimal(animal);
+
+            animal = new Chicken();
+            success = farm.AddAnimal(animal);
+
+            if (!success)
+            {
+                MessageBox.Show("Du har nått maxgränsen för antal djur");
+            }
+            UpdateAnimalList();
+            // nu vill vi se djuren på bondgården
+            //farm.Animals.Add(animal);
+        }
+
+        private void UpdateAnimalList()
+        {
+            lstPeople.ItemsSource = null;
+            lstPeople.ItemsSource = farm.GetAnimalsWithTwoLegs();
+
         }
     }
 }

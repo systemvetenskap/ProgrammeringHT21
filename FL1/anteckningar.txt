@@ -91,6 +91,8 @@ OBJEKT
 - En lista är som en array, men den är dynamisk
 - ett objekt kan gömma egenskaper och metoder = inkapsling
 - fields = variabler inuti en klass
+- Varje objekt anropar en metod som körs i samband med att det skapas 
+- det kallas konstruktor
 
 STANDARD VID NAMNGÌVNING
 - variabler börjar med liten bokstav

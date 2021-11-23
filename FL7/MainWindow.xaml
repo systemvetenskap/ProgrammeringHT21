@@ -15,6 +15,7 @@
         <Label x:Name="label1" Content="Födelseår" HorizontalAlignment="Left" Margin="324,82,0,0" VerticalAlignment="Top"/>
         <ListBox x:Name="lstPeople" Margin="489,34,48,183"/>
         <Button x:Name="btnGetPerson" Content="Hämta person" HorizontalAlignment="Left" Margin="499,265,0,0" VerticalAlignment="Top" Click="btnGetPerson_Click"/>
+        <Button x:Name="button1" Content="FARM" HorizontalAlignment="Left" Margin="32,251,0,0" VerticalAlignment="Top" Height="46" Width="94" Click="button1_Click"/>
 
     </Grid>
 </Window>
