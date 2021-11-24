@@ -20,9 +20,20 @@ namespace FL7
         public string Name { get; set; }
        // public List<Animal> Animals { get; set; } 
         #endregion
-        public Farm(int maxCountAnimals)
+        public Farm(int numberOfCows)
         {
-            MaximalAnimals = maxCountAnimals;
+            // MaximalAnimals = maxCountAnimals;
+            CreateCows(numberOfCows);
+        }
+
+        private void CreateCows(int numberOfCows)
+        {
+            Cow cow = new Cow();
+            for (int i = 1; i <= numberOfCows; i++)
+            {
+                cow.Id = i;
+                _animals.Add(cow);
+            }
         }
 
         // Läxa

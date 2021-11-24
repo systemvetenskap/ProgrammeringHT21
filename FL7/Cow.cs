@@ -10,5 +10,13 @@ namespace FL7
         {
             return "Kossa";
         }
+        public Cow(int id)
+        {
+            Id = id;
+        }
+        public Cow()
+        {
+
+        }
     }
 }

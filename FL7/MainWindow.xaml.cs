@@ -27,7 +27,7 @@ namespace FL7
         public MainWindow()
         {
             InitializeComponent();
-            farm = new Farm(2)
+            farm = new Farm(10)
             {
                 Address = "Landsvägen 2",
                 Name = "Höjda"
@@ -182,6 +182,17 @@ namespace FL7
         {
             lstPeople.ItemsSource = null;
             lstPeople.ItemsSource = farm.GetAnimalsWithTwoLegs();
+
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            Animal animal1 = new Pig();
+            Animal animal2 = new Cow();
+
+            animal1 = animal2;
+
+            animal1.Name = "Erik";
 
         }
     }

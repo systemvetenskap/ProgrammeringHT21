@@ -8,7 +8,7 @@ namespace FL7
     {
         public Pig()
         {
-
+            _test = "Hej";
         }
         public Pig(string name)
         {
