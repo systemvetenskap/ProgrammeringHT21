@@ -4,7 +4,7 @@ using System.Text;
 
 namespace FL7
 {
-    public class Animal
+    public abstract class Animal
     {
         protected string _test = "Erik";
 

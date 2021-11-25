@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,15 +24,35 @@ namespace FL7
         List<Person> people = new List<Person>();
         Farm farm;
 
-
+        
         public MainWindow()
         {
+            people = FileHandler.Open<List<Person>>("people.json");
+
+
+            Animal pig = new Pig();
             InitializeComponent();
-            farm = new Farm(10)
+            if (!File.Exists("farm.json"))
             {
-                Address = "Landsvägen 2",
-                Name = "Höjda"
-            };
+                farm = new Farm(10)
+                {
+                    Address = "Landsvägen 2",
+                    Name = "Höjda"
+                };
+
+                FileHandler.Save(farm, "farm.json");
+            }
+            else
+            {
+                farm = FileHandler.Open<Farm>("farm.json");
+            }
+            Cow cow = farm.GetCowById(534);
+            if (cow == null)
+            {
+                MessageBox.Show("Hittade ingen ko med det id-numret");
+            }
+            lstPeople.ItemsSource = farm.Cows;
+            
         }
 
         private void btnOk_Click(object sender, RoutedEventArgs e)
@@ -47,7 +68,7 @@ namespace FL7
             people.Add(person);
 
             UpdateListbox();
-            
+            FileHandler.Save(people, "people.json");
 
         }
 
@@ -71,7 +92,7 @@ namespace FL7
 
 
 
-            bool success = farm.AddAnimal(animal);
+            //bool success = farm.AddAnimal(animal);
 
 
             //Animal pig = new Animal
@@ -164,10 +185,11 @@ namespace FL7
             bool success;
             
             animal = new Cow();
-            success = farm.AddAnimal(animal);
+           // success = farm.AddAnimal(animal);
 
             animal = new Chicken();
-            success = farm.AddAnimal(animal);
+            //            success = farm.AddAnimal(animal);
+            success = true;
 
             if (!success)
             {

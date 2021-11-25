@@ -8,7 +8,9 @@ namespace FL7
     {
         // skapa private fields
         // instansvariabel
-        private List<Animal> _animals = new List<Animal>();
+        //private List<Animal> _animals = new List<Animal>();
+        public List<Cow> Cows { get; set; } = 
+        new List<Cow>();
 
 
         #region Properties
@@ -33,7 +35,7 @@ namespace FL7
             {
                 cow = new Cow();
                 cow.Id = i;
-                _animals.Add(cow);
+                Cows.Add(cow);
             }
         }
 
@@ -49,27 +51,27 @@ namespace FL7
         /// Lägger till djur i vår bondgård
         /// </summary>
         /// <param name="animal">Objekt av typen <see cref="Animal"/></param>
-        public bool AddAnimal(Animal animal)
+        public bool AddAnimal(Cow animal)
         {
             // Vi vill kontrollera om det finns plats
-            if (_animals.Count < MaximalAnimals)
+            if (Cows.Count < MaximalAnimals)
             {
-                _animals.Add(animal);
+                Cows.Add(animal);
                 return true;
             }
             return false;
         }
 
-        public List<Animal> GetAllAnimals()
+        public List<Cow> GetAllAnimals()
         {
-            return _animals;
+            return Cows;
         }
 
         public List<Animal> GetAnimalsWithTwoLegs()
         {
             List<Animal> animals = new List<Animal>();
             // lista --- tänk loop
-            foreach (Animal animal in _animals)
+            foreach (Cow animal in Cows)
             {
                 if (animal.NumberOfLegs == 2)
                 {
@@ -78,6 +80,18 @@ namespace FL7
             }
 
             return animals;
+        }
+
+        public Cow GetCowById(int id)
+        {
+            foreach (Cow cow in Cows)
+            {
+                if (cow.Id == id)
+                {
+                    return cow;
+                }
+            }
+            return null;
         }
     }
 }
