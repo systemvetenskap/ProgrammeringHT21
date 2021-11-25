@@ -28,9 +28,14 @@ namespace FL7
         public MainWindow()
         {
             people = FileHandler.Open<List<Person>>("people.json");
-
+            List<Animal> animals = new List<Animal>()
+            {
+                new Cow()
+            };
 
             Animal pig = new Pig();
+            animals.Add(pig);
+            FileHandler.Save(animals, "test.hsf");
             InitializeComponent();
             if (!File.Exists("farm.json"))
             {
@@ -46,7 +51,7 @@ namespace FL7
             {
                 farm = FileHandler.Open<Farm>("farm.json");
             }
-            Cow cow = farm.GetCowById(534);
+            Cow cow = farm.GetCowById(5);
             if (cow == null)
             {
                 MessageBox.Show("Hittade ingen ko med det id-numret");
