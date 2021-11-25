@@ -28,9 +28,10 @@ namespace FL7
 
         private void CreateCows(int numberOfCows)
         {
-            Cow cow = new Cow();
+            Cow cow; 
             for (int i = 1; i <= numberOfCows; i++)
             {
+                cow = new Cow();
                 cow.Id = i;
                 _animals.Add(cow);
             }

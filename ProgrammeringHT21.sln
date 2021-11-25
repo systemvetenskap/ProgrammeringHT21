@@ -26,9 +26,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Metoder", "Metoder\Metoder.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FL7", "FL7\FL7.csproj", "{9FAF9473-E972-4A98-89E3-78522A6BB598}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polymorfism", "Polymorfism\Polymorfism.csproj", "{43453D05-7BB6-433A-B051-C0045297DD24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Polymorfism", "Polymorfism\Polymorfism.csproj", "{43453D05-7BB6-433A-B051-C0045297DD24}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmoothieChallenge", "SmoothieChallenge\SmoothieChallenge.csproj", "{412AA09B-816E-4660-929F-CB352F415120}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmoothieChallenge", "SmoothieChallenge\SmoothieChallenge.csproj", "{412AA09B-816E-4660-929F-CB352F415120}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FL11", "FL11\FL11.csproj", "{DB6233A2-3B35-4BF3-903B-61FC48F1857D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -80,6 +82,10 @@ Global
 		{412AA09B-816E-4660-929F-CB352F415120}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{412AA09B-816E-4660-929F-CB352F415120}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{412AA09B-816E-4660-929F-CB352F415120}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB6233A2-3B35-4BF3-903B-61FC48F1857D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB6233A2-3B35-4BF3-903B-61FC48F1857D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB6233A2-3B35-4BF3-903B-61FC48F1857D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB6233A2-3B35-4BF3-903B-61FC48F1857D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

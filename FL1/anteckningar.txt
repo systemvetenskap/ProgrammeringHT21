@@ -94,6 +94,14 @@ OBJEKT
 - Varje objekt anropar en metod som körs i samband med att det skapas 
 - det kallas konstruktor
 
+ARV
+- överliggande föräldraklass = base class
+- alla barnen (sub class) ärver alla egenskaper och metoder från basklassen
+--> givet att de ges tillåtelse (access) Protection level
+- När vi har metoder i basklassen kommer alla subklasser att få metoden ärvd
+- vill man ändra metoden --> låt den bli virtual
+- Dvs polymorfism
+
 STANDARD VID NAMNGÌVNING
 - variabler börjar med liten bokstav
 - metoder börjar med stor bokstav
