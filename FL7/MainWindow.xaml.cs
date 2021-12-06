@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,15 +24,40 @@ namespace FL7
         List<Person> people = new List<Person>();
         Farm farm;
 
-
+        
         public MainWindow()
         {
-            InitializeComponent();
-            farm = new Farm(10)
+            people = FileHandler.Open<List<Person>>("people.json");
+            List<Animal> animals = new List<Animal>()
             {
-                Address = "Landsvägen 2",
-                Name = "Höjda"
+                new Cow()
             };
+
+            Animal pig = new Pig();
+            animals.Add(pig);
+            FileHandler.Save(animals, "test.hsf");
+            InitializeComponent();
+            if (!File.Exists("farm.json"))
+            {
+                farm = new Farm(10)
+                {
+                    Address = "Landsvägen 2",
+                    Name = "Höjda"
+                };
+
+                FileHandler.Save(farm, "farm.json");
+            }
+            else
+            {
+                farm = FileHandler.Open<Farm>("farm.json");
+            }
+            Cow cow = farm.GetCowById(5);
+            if (cow == null)
+            {
+                MessageBox.Show("Hittade ingen ko med det id-numret");
+            }
+            lstPeople.ItemsSource = farm.Cows;
+            
         }
 
         private void btnOk_Click(object sender, RoutedEventArgs e)
@@ -47,7 +73,7 @@ namespace FL7
             people.Add(person);
 
             UpdateListbox();
-            
+            FileHandler.Save(people, "people.json");
 
         }
 
@@ -71,7 +97,7 @@ namespace FL7
 
 
 
-            bool success = farm.AddAnimal(animal);
+            //bool success = farm.AddAnimal(animal);
 
 
             //Animal pig = new Animal
@@ -164,10 +190,11 @@ namespace FL7
             bool success;
             
             animal = new Cow();
-            success = farm.AddAnimal(animal);
+           // success = farm.AddAnimal(animal);
 
             animal = new Chicken();
-            success = farm.AddAnimal(animal);
+            //            success = farm.AddAnimal(animal);
+            success = true;
 
             if (!success)
             {

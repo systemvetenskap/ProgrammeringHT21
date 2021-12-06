@@ -10,7 +10,10 @@ namespace FL7
         public string Name { get; set; }
         public int BirthYear { get; set; }
         public int Age => GetAge();
+        public Person()
+        {
 
+        }
         // private fields
         private bool isHungry = true;
         private int _numberOfChildren = 2;
