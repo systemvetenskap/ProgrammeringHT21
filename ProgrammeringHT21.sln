@@ -30,7 +30,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Polymorfism", "Polymorfism\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmoothieChallenge", "SmoothieChallenge\SmoothieChallenge.csproj", "{412AA09B-816E-4660-929F-CB352F415120}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FL11", "FL11\FL11.csproj", "{DB6233A2-3B35-4BF3-903B-61FC48F1857D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FL11", "FL11\FL11.csproj", "{DB6233A2-3B35-4BF3-903B-61FC48F1857D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TentaTrain", "TentaTrain\TentaTrain.csproj", "{C8D9B2C1-3391-4C16-B0D7-C522B1C20BD2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -86,6 +88,10 @@ Global
 		{DB6233A2-3B35-4BF3-903B-61FC48F1857D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB6233A2-3B35-4BF3-903B-61FC48F1857D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB6233A2-3B35-4BF3-903B-61FC48F1857D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8D9B2C1-3391-4C16-B0D7-C522B1C20BD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8D9B2C1-3391-4C16-B0D7-C522B1C20BD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8D9B2C1-3391-4C16-B0D7-C522B1C20BD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8D9B2C1-3391-4C16-B0D7-C522B1C20BD2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
